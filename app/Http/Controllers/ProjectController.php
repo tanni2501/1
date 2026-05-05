@@ -18,4 +18,4 @@ class ProjectController extends Controller
             'title' => 'Мій портфоліо'
         ]);
     }
-}
+}  

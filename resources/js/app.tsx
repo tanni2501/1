@@ -9,9 +9,7 @@ createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     resolve: (name) =>
         resolvePageComponent(
-            // 1. Проверьте путь! Если папка называется Pages, замените pages на Pages
             `./Pages/${name}.jsx`, 
-            // 2. Укажите glob-паттерн, который ищет нужные расширения
             import.meta.glob('./Pages/**/*.{jsx,tsx,js}'),
         ),
     setup({ el, App, props }) {
